@@ -57,9 +57,18 @@ ollama pull mistral
 ollama run mistral
 ```
 
-### 6. Set you Gemini API key
+### 6. Create a `.env` File and Set Your Gemini API Key
 
-In the .env file replace [MY_API_KEY] with your gemini api key
+At the root of your project directory, create a `.env` file:
+
+```bash
+touch .env
+```
+Setup your API key in the file as:
+
+```env
+GEMINI_API_KEY=your_actual_api_key_here
+```
 
 ### 7. Run main.py
 
