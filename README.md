@@ -21,4 +21,50 @@ Follow these steps to set up and run the Multi-Agent Product Discussion Simulato
 ```bash
 git clone https://github.com/your-username/multi-agent-discussion-simulator.git
 cd multi-agent-discussion-simulator
+```
+
+### 2. Create a Virtual Environment
+
+```bash
+python3 -m venv agenv
+source agenv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Install and run Ollama
+
+Make sure you have ollama installed.
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh  # macOS/Linux
+```
+Start the Ollama Service
+
+```bash
+ollama serve
+```
+
+### 5. Pull and Run Mistral locally
+
+In a new terminal download  and run the mistral model
+```bash
+ollama pull mistral
+ollama run mistral
+```
+
+### 6. Set you Gemini API key
+
+In the .env file replace [MY_API_KEY] with your gemini api key
+
+### 7. Run main.py
+
+```bash
+python main.py
+```
+
 
